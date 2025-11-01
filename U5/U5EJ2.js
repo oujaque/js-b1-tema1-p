@@ -70,7 +70,12 @@ let planets = [
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
 
+let result = planetDiameter(planets);
 
+function planetDiameter(planets){
+
+   return planets.map(planet => [planet.name, planet.diameter]);
+}
 
 /**
  * TEST

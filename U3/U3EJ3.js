@@ -61,7 +61,18 @@ console.log(totalApproved(classroomStudents));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function totalApproved (students){
 
+  function isApproved(student){
+    return student.averageGrade >= 5;
+  }
+  let total = 0;
+  students.forEach(element => {
+    total += isApproved(element) ? 1 : 0;
+  });
+
+  return total;
+}
 
 
 /**

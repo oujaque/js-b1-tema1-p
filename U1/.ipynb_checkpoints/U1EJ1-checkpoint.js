@@ -68,7 +68,7 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-let result = planets.map(planet => [planet.name, planet.diameter]);
+let result = planets.map(planet => [planet.name, planet.diameter]); 
 /**
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 

@@ -14,9 +14,13 @@
 	rangeOfNumbers(4) hauria de ser 1+2+3+4 = 10
 */
 
-//Escribe aquí tu solución / escriviu aquí la vostra solució:
+//Escribe aquí tu solución / escriviu aquí la vostra solució
 
+function rangeOfNumbers(i){
 
+	if (i == 0) return 0;
+	else return (i + rangeOfNumbers(i-1));
+}
 
 
 /**

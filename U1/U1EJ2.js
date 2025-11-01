@@ -66,7 +66,7 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-
+let result = planets.filter(planet => planet.hasRings == true);
 
 /**
  * TEST

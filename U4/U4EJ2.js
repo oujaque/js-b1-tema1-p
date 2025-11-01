@@ -31,7 +31,23 @@
 console.log(evenNumbers(4,7,21,3)); //This will return [4,6,20,2]
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+function evenNumbers(...numbers){
 
+  let copia = [...numbers];
+  let even = new Array();
+
+  copia.forEach(function (val){
+    
+    if (val % 2 == 0){
+      even.push(val);
+    }
+    else{
+      even.push(val-1);
+    }
+
+  });
+  return even;
+}
 
 
 

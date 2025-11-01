@@ -61,6 +61,19 @@ console.log(currentAge(classroomStudents));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function currentAge(vector){
+
+  function calculatedYears(student){
+    return 2023-student.yearOfBirth;
+  }
+  
+  let computedAge = [];
+  vector.forEach(element => {
+    computedAge.push(calculatedYears(element));
+    
+  });
+  return computedAge;
+}
 
 
 

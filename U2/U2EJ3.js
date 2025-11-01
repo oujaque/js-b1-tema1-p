@@ -18,7 +18,15 @@ oddNumbers(7, myArray);
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function oddNumbers(i, vector){
 
+	if (i==0) return vector;
+	if (i % 2 == 1) vector.push(i);
+
+	return oddNumbers(i-1, vector);
+
+
+}
 
 
 /**
