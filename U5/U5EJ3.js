@@ -67,12 +67,10 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-let result = planetHasRings(planets);
 
-function planetHasRings(planets){
+const planetHasRings = (planet => planet.hasRings == true);
 
-    return planets.filter(planet => planet.hasRings == true);
-}
+const result = planets.filter(planetHasRings);
 
 /**
  * TEST

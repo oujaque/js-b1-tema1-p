@@ -61,13 +61,16 @@ const classroomStudents = [
  
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
- let result = letterGrade(classroomStudents);
 
-function letterGrade (students){
+const letterGrade = student => (student.averageGrade >= 9 ? "A" : 
+                              (student.averageGrade < 9 && student.averageGrade >= 7) ? "B" :
+                              (student.averageGrade < 8 && student.averageGrade >= 3.5) ? "C" : "D");
+                              
+                              
+                              
+const result = classroomStudents.map(letterGrade);
 
-  return students.map(student => student.averageGrade >= 9 ? "A" : (student.averageGrade < 9
-  && student.averageGrade >= 7) ? "B" : (student.averageGrade < 8 && student.averageGrade >= 3.5) ? "C" : "D");
-}
+
 /**
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 
